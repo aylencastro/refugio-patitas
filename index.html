@@ -12,7 +12,22 @@
 </head>
 <body>
     <header>
-        <nav>
+        <!-- navegador para escritorio -->
+        <nav class="navEscritorio">
+            <ul id="navegador">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="./paginas/nosotros.html">Nuestro Refugio</a></li>
+                <li><a href="./paginas/historias.html"><img class="patitaNav" src="./imagenes/iconos/9035065_paw_icon.png" alt="Patita">Historias de Patitas<img class="patitaNav" src="./imagenes/iconos/9035065_paw_icon.png" alt="Patita"></a></li>
+                <li><a href="./paginas/voluntariado.html">Voluntariado</a></li>
+                <li><a href="./paginas/donaciones.html">Donaciones</a></li>
+            </ul>
+        </nav>
+
+        <!-- navegador para teléfonos -->
+        <div id="menuNavMobil">
+            <img src="./imagenes/iconos/menu.png" alt="menu"> 
+        </div>
+        <nav class="navMobil">
             <ul id="navegador">
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="./paginas/nosotros.html">Nuestro Refugio</a></li>
@@ -36,7 +51,7 @@
 
                 <br>
                 
-                <ul>
+                <ul class="listadoMobil">
                     <li>Perros</li>
                     <li>Gatos</li>
                     <li>Tortugas</li>
@@ -69,5 +84,7 @@
     <footer>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus maxime, quasi enim iste dicta nulla?</p>
     </footer>
+
+    <script src="./js/script.js"></script>
 </body>
 </html>

@@ -42,6 +42,10 @@ a:visited{
     color: inherit;
 }
 
+.navMobil, #menuNavMobil{
+    display: none;
+}
+
 #navegador {
     color: #FBFEF9;
     display: flex;
@@ -131,4 +135,82 @@ footer{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+}
+
+.voluntariado{
+    margin: 2vh auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#nuevoVoluntario, #cambioColor, #patitasNuevas{
+    height: 8vh;
+    width: 8vw;
+    margin: auto;
+    background-color: #503B31;
+    color: #FBFEF9;
+    border: 3px solid #705D56;
+    border-radius: 10px;
+}
+
+#gracias{
+    text-align: center;
+    color: #503B31;
+    font-size: 2rem;
+    margin: 5vh auto;
+}
+
+.refugio{
+    display: flex;
+    justify-content: center;
+}
+
+#patita1, #patita2{
+    display: none;
+}
+
+
+@media (max-width:768px){
+    p{
+        font-size: 1.5rem;
+    }
+
+    .navEscritorio{
+        display: none;
+    }
+
+    #menuNavMobil, #menuNavMobil img{
+        width: 15vw;
+        height: 7vh;
+        margin: 1vh 1vh;
+        display: inline;
+    }
+
+    .animales{
+        width: 85%;
+        font-size: 1.5rem;
+    }
+
+    .animales ul li {
+        margin:0 auto 1vh;
+        width: 50%;
+    }
+
+    .animales p{
+        margin-bottom: 0;
+    }
+
+    .listadoMobil{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #imgAnimales img{
+        width: 95%;
+    }
+
+    footer p{
+        font-size: 1rem;
+        text-align: center;
+    }
 }
