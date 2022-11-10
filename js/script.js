@@ -28,3 +28,38 @@ function sumamePatitas(){
     let tituloConPatitas = document.getElementsByTagName("h1")[0];
     tituloConPatitas.style.margin = "auto 1vw";
 }
+
+setTimeout(aceptarCookies, 5000);
+
+function aceptarCookies(){
+    document.getElementById("cookies").getElementsByTagName("button")[0].style.display = "inline";
+}
+
+function chauPopUp(){
+    document.getElementById("cookies").style.display = "none";
+}
+
+setTimeout(apareceDeNuevo, 10000);
+// setInterval(apareceDeNuevo, 10000);
+
+function apareceDeNuevo(){
+    document.getElementById("cookies").style.display = "flex";
+}
+
+function chequearCampos(){
+    var nombreDonante = document.getElementById("nombreForm").value;
+    var telDonante = document.getElementById("telForm").value;
+    var mailDonante = document.getElementById("mailForm").value;
+    var dineroDonante = document.getElementById("dineroForm").value;
+
+    if (nombreDonante == ""){
+        alert("Por favor llenar con su nombre");
+    } else if (telDonante == ""){
+        alert("Por favor llenar con su telefono");
+    } else if (mailDonante == ""){
+        alert("Por favor llenar con su email");
+    } else if (dineroDonante == ""){
+        alert("Por favor llenar con el dinero");
+    }
+
+}

@@ -62,6 +62,58 @@ main{
     margin-top: 9vh;
 }
 
+#cookies{
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.92);
+    display: flex;
+}
+
+.cookiesDiv{
+    background-color: #020202;
+    margin: auto;
+    display: inherit;
+    flex-flow: column;
+    padding: 4vh;
+    border-radius: 50px;
+}
+
+.cookiesDiv p{
+    text-align: center;
+    color: #D8A56D;
+    font-weight: 800;
+    margin: 0 auto 2vh;
+}
+
+#cookieMonster{
+    width: 45%;
+    height: 60%;
+    margin: 1vh auto;
+}
+
+.cookiesDiv button{
+    width: 30%;
+    padding: 1vh;
+    margin: 1vh auto 0;
+    font-weight: 700;
+    background-color: #456F99;
+    color: #372625;
+    text-shadow: #D8A56D 0.5px 0.5px;
+    border-radius: 20px;
+    display: none;
+}
+
+.cookiesDiv button:hover{
+    background-color: #6FA1CF;
+}
+
+.cookiesDiv button img{
+    width: 2vw;
+    margin: auto 0.2vw;
+}
+
 .bannerAnimal{
     width: 100%;
     height: 65vh;
@@ -175,7 +227,7 @@ h3{
 }
 
 form{
-   width: 60%;
+   width: 50%;
    margin: 5vh auto;
    display: flex;
    flex-direction: column;

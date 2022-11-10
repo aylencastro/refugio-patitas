@@ -39,6 +39,16 @@
     </header>
 
     <main>
+        <!-- pop-up! -->
+        <div id="cookies">
+            <div class="cookiesDiv">
+                <p>¡Hola! Te vamos a pedir que aceptes las cookies del sitio para poder seguir navegando.</p>
+                <img src="../imagenes/cookiemonster.jpg" alt="Cookie Monster" id="cookieMonster">
+                <button onclick="chauPopUp()">Acepto las <img src="../imagenes/cookie.png" alt="Galleta"></button>
+            </div>
+        </div> 
+
+
     <section>
         <div class="bannerAnimal">
             <h1>REFUGIO PATITAS</h1>
@@ -110,7 +120,7 @@
 
             <br>
 
-            <input type="submit" value="Enviar" class="enviarForm">
+            <input type="submit" value="Enviar" class="enviarForm" onclick="chequearCampos()">
         </form>
     </section>
     </main>
