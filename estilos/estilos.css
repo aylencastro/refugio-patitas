@@ -169,6 +169,69 @@ footer{
     display: none;
 }
 
+h3{
+    margin: 3vh 2vw 0;
+    font-size: x-large;
+}
+
+form{
+   width: 60%;
+   margin: 5vh auto;
+   display: flex;
+   flex-direction: column;
+   font-size: large;
+   background-color: #D8A56D;
+   padding: 2vh 2vw;
+   color: #020202;
+   text-shadow: #FBFEF9 1px 1px;
+   font-weight: 700;
+}
+
+.campoObligatorio{
+    color: rgb(85, 7, 7);
+    font-size: small;
+    margin-bottom: 1.5vh;
+    text-shadow: none;
+}
+
+.enviarForm{
+    margin: auto;
+    width: 10vw;
+    height: 5vh;
+    background-color: #4f372c;
+    border-radius: 20px;
+    border-color: #705D56;
+    text-shadow: #4f372c 1px 1px;
+    color: #D8A56D;
+}
+
+.enviarForm:hover{
+    background-color: #FBFEF9;
+}
+
+#nombreForm, #telForm, #mailForm, #dineroForm{
+    width: 70%;
+    padding: 0.5vw;
+}
+
+.alLado{
+    display: flex;
+}
+
+.alLado select{
+    padding: 00.5vw;
+}
+
+.alLado p, .alLado select {
+    width: fit-content;
+    margin: auto 0.5vw;
+}
+
+#dineroForm, #telForm{
+    width: 30%;
+}
+
+
 
 @media (max-width:768px){
     p{

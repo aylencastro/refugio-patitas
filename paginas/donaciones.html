@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../estilos/estilos.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="../imagenes/iconos/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../imagenes/iconos/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../imagenes/iconos/favicon-16x16.png">
+    <title>Refugio Patitas | Donaciones</title>
+</head>
+<body>
+    <header>
+        <!-- navegador para escritorio -->
+        <nav class="navEscritorio">
+            <ul id="navegador">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="./nosotros.html">Nuestro Refugio</a></li>
+                <li><a href="./historias.html"><img class="patitaNav" src="../imagenes/iconos/9035065_paw_icon.png" alt="Patita">Historias de Patitas<img class="patitaNav" src="../imagenes/iconos/9035065_paw_icon.png" alt="Patita"></a></li>
+                <li><a href="./voluntariado.html">Voluntariado</a></li>
+                <li><a href="./donaciones.html">Donaciones</a></li>
+            </ul>
+        </nav>
+
+        <!-- navegador para teléfonos -->
+        <div id="menuNavMobil">
+            <img src="../imagenes/iconos/menu.png" alt="menu"> 
+        </div>
+        <nav class="navMobil">
+            <ul id="navegador">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="./nosotros.html">Nuestro Refugio</a></li>
+                <li><a href="./historias.html"><img class="patitaNav" src="../imagenes/iconos/9035065_paw_icon.png" alt="Patita">Historias de Patitas<img class="patitaNav" src="../imagenes/iconos/9035065_paw_icon.png" alt="Patita"></a></li>
+                <li><a href="./voluntariado.html">Voluntariado</a></li>
+                <li><a href="./donaciones.html">Donaciones</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+    <section>
+        <div class="bannerAnimal">
+            <h1>REFUGIO PATITAS</h1>
+        </div>
+
+        <h2>En este lugar vas a poder contribuir con nuestra causa :)</h2>
+        <h3>¡Gracias por ayudarnos!</h3>
+        <h3>Te vamos a pedir que por favor completes el siguiente formulario</h3>
+    </section>
+
+    <section>
+        <form action="./exito.html">
+            <div>
+                <label for="nombreForm">Nombre</label>
+                <p class="campoObligatorio">*Obligatorio</p>
+            </div>
+            <input type="text" name="nombreForm" id="nombreForm" placeholder="Pepito Pérez">
+
+            <br>
+
+            <div>
+                <label for="telForm">Télefono</label>
+                <p class="campoObligatorio">*Obligatorio</p>
+            </div>
+            <div class="alLado">
+                <select id="codigoTel">
+                    <option value="arg">+54 (Argentina)</option>
+                    <option value="peru">+51 (Perú)</option>
+                    <option value="brasil">+55 (Brasil)</option>
+                    <option value="chile">+56 (Chile)</option>
+                    <option value="colombia">+57 (Colombia)</option>
+                </select>
+                <input type="number" name="telForm" id="telForm" placeholder="1512345678" min="10">
+            </div>
+
+            <br>
+
+            <div>
+                <label for="mailForm">Correo Electrónico</label>
+                <p class="campoObligatorio">*Obligatorio</p>
+            </div>
+            <input type="email" name="mailForm" id="mailForm" placeholder="pepito@mail.com">
+
+            <br>
+
+            <div>
+                <p>Seleccione el medio por el cual le gustaría recibir nuestro agradecimiento:</p>
+                <p class="campoObligatorio">*Obligatorio</p>
+            </div>
+            <div>
+                <input type="radio" name="agradecimientoForm" id="numero" required>
+                <label for="numero">Teléfono</label>
+            </div>
+            <div>
+                <input type="radio" name="agradecimientoForm" id="mail">
+                <label for="mail">Email</label>
+            </div>
+
+            <br>
+
+            <div>
+                <label for="dineroForm">Dinero a donar</label>
+                <p class="campoObligatorio">*Obligatorio</p>
+            </div>
+            <div class="alLado">
+              <p>$</p>
+              <input type="number" name="dineroForm" id="dineroForm" placeholder="1"> 
+            </div>
+
+            <br>
+
+            <input type="submit" value="Enviar" class="enviarForm">
+        </form>
+    </section>
+    </main>
+
+    <footer>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus maxime, quasi enim iste dicta nulla?</p>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>
