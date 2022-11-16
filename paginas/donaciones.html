@@ -44,7 +44,7 @@
             <div class="cookiesDiv">
                 <p>¡Hola! Te vamos a pedir que aceptes las cookies del sitio para poder seguir navegando.</p>
                 <img src="../imagenes/cookiemonster.jpg" alt="Cookie Monster" id="cookieMonster">
-                <button onclick="chauPopUp()">Acepto las <img src="../imagenes/cookie.png" alt="Galleta"></button>
+                <button onclick="chauPopUpTrue()">Acepto las <img src="../imagenes/cookie.png" alt="Galleta"></button><button onclick="chauPopUpFalse()">No acepto las <img src="../imagenes/cookie.png" alt="Galleta"></button>
             </div>
         </div> 
 
@@ -60,7 +60,7 @@
     </section>
 
     <section>
-        <form action="./exito.html">
+        <form action="./exito.html" onsubmit="chequearCampos()">
             <div>
                 <label for="nombreForm">Nombre</label>
                 <p class="campoObligatorio">*Obligatorio</p>
@@ -120,7 +120,7 @@
 
             <br>
 
-            <input type="submit" value="Enviar" class="enviarForm" onclick="chequearCampos()">
+            <input type="submit" value="Enviar" class="enviarForm">
         </form>
     </section>
     </main>

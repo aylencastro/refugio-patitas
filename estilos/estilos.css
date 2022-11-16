@@ -162,16 +162,67 @@ span{
     margin-bottom: 5vh;
 }
 
-#imgAnimales{
+.imgAnimales{
     margin-top: 4vh;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-#imgAnimales img{
+.imgAnimales img{
     width: 45%;
     margin-bottom: 5vh;
+}
+
+.imgRefugio{
+    display: flex;
+    flex-direction: column;
+}
+
+.imgRefugio div{
+    width: 70%;
+    height: 70vh;
+    margin: 2vh auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation-duration: 15s;
+    animation-timing-function: ease-in-out;
+}
+
+#muchachos{
+    background-image: url("../imagenes/cachorros-jaula-refugio.jpg");
+}
+
+#refu{
+    background-image: url("../imagenes/variada_actividad_en_el_refugio_de_la_asociacion_protectora_de_animales_2.jpg");
+}
+
+@keyframes primerbyn {
+    70% {background-image: url("../imagenes/cachbyn.jpg");}
+    100% {background-image: url("../imagenes/cachorros-jaula-refugio.jpg");}
+}
+
+@keyframes segundobyn {
+    70% {background-image: url("../imagenes/refbyn.jpg");}
+    100% {background-image: url("../imagenes/variada_actividad_en_el_refugio_de_la_asociacion_protectora_de_animales_2.jpg");}
+}
+
+.imgRefugio p{
+    width: 70%;
+    margin: 0 auto 3vh;
+    text-align: justify;
+}
+
+.imgRefugio button{
+    margin: 0 auto 2vh;
+    width: 10vw;
+    height: 10vh;
+    background-color: #705D56;
+    color: #D8A56D;
+    text-shadow: #372625 1.5px 1px;
+    font-weight: 700;
+    border-radius: 20px;
+    border: #372625;
 }
 
 .mapaPatitas{
@@ -320,7 +371,7 @@ form{
         flex-direction: column;
     }
 
-    #imgAnimales img{
+    .imgAnimales img{
         width: 95%;
     }
 
