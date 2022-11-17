@@ -19,6 +19,7 @@ header{
     background-color: #503B31;
     position: fixed;
     top: 0;
+    z-index: 15;
 }
 
 ul li, ul li a {
@@ -234,7 +235,9 @@ footer{
     padding-top: 2vh;
     width: 100%;
     height: 12vh;
-    background-color: #9097C0; 
+    background-color: #9097C0;
+    position: relative;
+    bottom: 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -334,6 +337,58 @@ form{
     width: 30%;
 }
 
+.animalesPorConocer{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.botonDropdown{
+    background-color: #372625;
+    color: #D8A56D;
+    text-shadow: 0.5px 0.5px #705D56;
+    padding: 1.5vh;
+    font-size: medium;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    min-width: 15vw;
+}
+
+.animalitos{
+    margin: 2vh auto;
+    position: relative;
+    display: inline-block;
+    width: fit-content;
+}
+
+.contenidoDropdown{
+    display: none;
+    position: inherit;
+}
+
+.contenidoDropdown button{
+    font-size: medium;
+    font-weight: 600;
+    padding: 1vh;
+    display: block;
+    background-color: #D8A56D;
+    min-width: 15vw;
+    border: none;
+}
+
+.contenidoDropdown button:hover, .animalitos:hover{
+    background-color: #4f372c;
+    color: #D8A56D;
+}
+
+.animalitos:hover, .contenidoDropdown{
+    display: block;
+}
+
+.animalitos img{
+    height: 5vh;
+}
 
 
 @media (max-width:768px){
