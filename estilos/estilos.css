@@ -343,7 +343,7 @@ form{
     text-align: center;
 }
 
-.botonDropdown{
+.botonDropdown {
     background-color: #372625;
     color: #D8A56D;
     text-shadow: 0.5px 0.5px #705D56;
@@ -355,19 +355,19 @@ form{
     min-width: 15vw;
 }
 
-.animalitos{
+.animalitos {
     margin: 2vh auto;
     position: relative;
     display: inline-block;
     width: fit-content;
 }
 
-.contenidoDropdown{
+.contenidoDropdown {
     display: none;
     position: inherit;
 }
 
-.contenidoDropdown button{
+.contenidoDropdown button {
     font-size: medium;
     font-weight: 600;
     padding: 1vh;
@@ -377,17 +377,17 @@ form{
     border: none;
 }
 
-.contenidoDropdown button:hover, .animalitos:hover{
+.contenidoDropdown button:hover, .animalitos:hover  {
     background-color: #4f372c;
     color: #D8A56D;
 }
 
-.animalitos:hover, .contenidoDropdown{
+.animalitos:hover .contenidoDropdown {
     display: block;
 }
 
 .animalitos img{
-    height: 5vh;
+    height: 4.5vh;
 }
 
 
