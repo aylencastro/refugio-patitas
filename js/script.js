@@ -126,14 +126,27 @@ console.log("Perritos ordenados: " + perritos);
 aves.push("Gallo Claudio");
 
 var animalesPorConocer = document.getElementById("animalitosDropdown");
-var dropdown = document.getElementById("especieDropdown");
+var nombresAnimales = [];
 
 // 1) Caso Perros
 var perris = document.getElementById("perritos");
 perris.onclick = () => {
-    perritos.forEach( (item) => {
+    function quitarAnimales(parent) {
+        while (parent.firstChild) {
+            parent.removeChild(parent.firstChild);
+        }
+    }
+    quitarAnimales(animalesPorConocer);
+
+    nombresAnimales.length = 0;
+
+    perritos.forEach( (i) => {
+       nombresAnimales.push(i);
+    });
+
+    nombresAnimales.forEach( (j) => {
         var botonAnimal = document.createElement("button");
-        botonAnimal.textContent = item;
+        botonAnimal.textContent = j;
         animalesPorConocer.appendChild(botonAnimal);
     });
     animalesPorConocer.style.display = "block";
@@ -142,32 +155,71 @@ perris.onclick = () => {
 // 2) Caso Gatos
 var gatis = document.getElementById("gatitos");
 gatis.onclick = () => {
-    gatitos.forEach( (item) => {
+    function quitarAnimales(parent) {
+        while (parent.firstChild) {
+            parent.removeChild(parent.firstChild);
+        }
+    }
+    quitarAnimales(animalesPorConocer);
+
+    nombresAnimales.length = 0;
+
+    gatitos.forEach( (i) => {
+        nombresAnimales.push(i);
+    });
+
+    nombresAnimales.forEach( (j) =>{
         var botonAnimal = document.createElement("button");
-        botonAnimal.textContent = item;
+        botonAnimal.textContent = j;
         animalesPorConocer.appendChild(botonAnimal);
     });
+
     animalesPorConocer.style.display = "block";
 }
 
 // 3) Caso Aves
 var pajaritos = document.getElementById("aves");
 pajaritos.onclick = () => {
-    aves.forEach( (item) => {
+    function quitarAnimales(parent) {
+        while (parent.firstChild) {
+            parent.removeChild(parent.firstChild);
+        }
+    }
+    quitarAnimales(animalesPorConocer);
+
+    nombresAnimales.length = 0;
+
+    aves.forEach( (i) => {
+        nombresAnimales.push(i);
+    });
+
+    nombresAnimales.forEach( (j) =>{
         var botonAnimal = document.createElement("button");
-        botonAnimal.innerHTML = item;
+        botonAnimal.textContent = j;
         animalesPorConocer.appendChild(botonAnimal);
     });
-    animalesPorConocer.style.display = "block";
 }
 
 // 4) Caso Tortugas
 var tortuguitas = document.getElementById("tortugas");
 tortuguitas.onclick = () => {
-    tortugas.forEach((item) =>{
+    function quitarAnimales(parent) {
+        while (parent.firstChild) {
+            parent.removeChild(parent.firstChild);
+        }
+    }
+    quitarAnimales(animalesPorConocer);
+
+    nombresAnimales.length = 0;
+
+    tortugas.forEach( (i) => {
+        nombresAnimales.push(i);
+    });
+
+    nombresAnimales.forEach( (j) =>{
         var botonAnimal = document.createElement("button");
-        botonAnimal.innerHTML = item;
-        animalesPorConocer.appendChild(botonAnimal); 
+        botonAnimal.textContent = j;
+        animalesPorConocer.appendChild(botonAnimal);
     });
     animalesPorConocer.style.display = "block";
 }
@@ -175,9 +227,22 @@ tortuguitas.onclick = () => {
 // 5) Caso Conejos
 var conejitos = document.getElementById("conejitos");
 conejitos.onclick = () => {
-    conejos.forEach( (item) => {
+    function quitarAnimales(parent) {
+        while (parent.firstChild) {
+            parent.removeChild(parent.firstChild);
+        }
+    }
+    quitarAnimales(animalesPorConocer);
+
+    nombresAnimales.length = 0;
+
+    conejos.forEach( (i) => {
+        nombresAnimales.push(i);
+    });
+
+    nombresAnimales.forEach( (j) =>{
         var botonAnimal = document.createElement("button");
-        botonAnimal.innerHTML = item;
+        botonAnimal.textContent = j;
         animalesPorConocer.appendChild(botonAnimal);
     });
     animalesPorConocer.style.display = "block";
