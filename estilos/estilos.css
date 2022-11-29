@@ -11,6 +11,7 @@ Paleta de colores:
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 
 header{
@@ -390,6 +391,69 @@ form{
     height: 4.5vh;
 }
 
+#listaAnimales{
+    margin: auto;
+    width: 90%;
+    color: #D8A56D;
+    text-align: center;
+    background-color: #372625;
+    padding: 0.5vh 0;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+#listaAnimales ul{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#listaAnimales ul li {
+    margin: 2vh 0;
+    list-style: none;
+    padding: 0.5vh;
+    width: 18%;
+    height: 100%;
+}
+
+#listaAnimales ul li:hover {
+   background-color: #FBFEF9;
+   color: #372625;
+   text-shadow: #4f372c 0.5px 0.5px;
+}
+
+.animalitoRefugio{
+    margin: 5vh auto;
+    width: 40%;
+    background-color: #9097C0;
+    padding: 5vh 5vw;
+    border-radius: 50px;
+    border-style: solid;
+    border-color: #503B31 #4f372c;
+}
+
+.animalitoRefugio h3{
+    color: #372625;
+    margin: 0 auto 1.5vh;
+    text-align: center;
+    width: 40%;
+    background-color: #FBFEF9;
+    border-radius: 20px;
+    padding: 1vh;
+    border-style: dotted;
+    border-color: #503B31 #4f372c;
+}
+
+.animalitoRefugio h4{
+    color: #020202;
+    font-weight: 600;
+}
+
+.animalitoRefugio img{
+    width: 100%;
+    margin: 1.5vh auto 0;
+    border-radius: 20px;
+}
 
 @media (max-width:768px){
     p{

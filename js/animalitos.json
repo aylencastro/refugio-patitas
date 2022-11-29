@@ -3,7 +3,7 @@
         {
             "id": "perro1",
             "nombre": "Pepe",
-            "raza": "Colie, labrador, puro perro",
+            "raza": "Colie, labrador y puro perro",
             "especie": "Perro",
             "edad": 4,
             "colores": "marrón, dorado y negro",
@@ -11,6 +11,7 @@
             "historia": "Rescatamos a Pepe de un terreno valdío en Villa Urquiza. Estaba en terribles condiciones, pero luego de muchas vacunas y mucho amor y cuidados salió adelante lleno de alegría.",
             "img": "../imagenes/animalitos/perri1.jpg"
         },
+
         {
             "id": "perro2",
             "nombre": "Gina",
@@ -22,6 +23,7 @@
             "historia": "Gina vino en una camada de cachorros de Almagro. Es muy juguetona.",
             "img": "../imagenes/animalitos/perri2.jpg"
         },
+
         {
             "id": "perro3",
             "nombre": "Anita",
@@ -33,6 +35,7 @@
             "historia": "La dueña de Anita no la podía cuidar más y lamentablemente tuvo que ponerla en adopción. Ella es muy cariñosa y buena, aunque le gusta mordisquear zapatos.",
             "img": "../imagenes/animalitos/perri3.jpg"
         },
+
         {
             "id": "perro4",
             "nombre": "Panchito",
@@ -55,6 +58,7 @@
             "historia": "Reina apareció un sábado lluvioso en el refugio y decidió no irse nunca más. Es la compañera ideal para mirar pelis en Netflix porque no te spoilea.",
             "img": "../imagenes/animalitos/gati1.jpg"
         },
+
         {
             "id": "gato2",
             "nombre": "Dante",
@@ -65,6 +69,7 @@
             "historia": "Rescatamos a Dante de una construcción. Se ve que tenía muchas ganas de ser Bob el Constructor y eso se nota hasta hoy en día.",
             "img": "../imagenes/animalitos/gati2.jpg"
         },
+
         {
             "id": "gato3",
             "nombre": "Alfa",
@@ -76,7 +81,7 @@
             "img": "../imagenes/animalitos/gati3.jpg"
         },
     
-    {
+        {
             "id": "ave1",
             "nombre": "Rodolfo",
             "edad": 2,
@@ -86,6 +91,7 @@
             "historia": "Rodolfo vino del ex Zoo de Buenos Aires. Super charlatán y compañero.",
             "img": "../imagenes/animalitos/ave1.jpg"
         },
+
         {
             "id": "ave2",
             "nombre": "Gallo Claudio",
@@ -95,8 +101,9 @@
             "sexo": "Macho",
             "historia": "Clau fue rescatado de una granja y ahora se la pasa despertando a todo el mundo a las 5am. La alarma más molesta, recomendamos 10/10.",
             "img": "../imagenes/animalitos/ave2.jpg"
-        },   
-    {
+        },  
+
+        {
             "id": "conejo1",
             "nombre": "Apio",
             "edad": 1,
@@ -106,6 +113,7 @@
             "historia": "Rescatamos a Apio de un criadero. Muy esponjosito y carñoso.",
             "img": "../imagenes/animalitos/cone1.jpg"
         },
+
         {
             "id": "conejo2",
             "nombre": "Bugs Bunny",
@@ -116,6 +124,7 @@
             "historia": "Bugs Bunny vino del mismo refugio que Bugs Bunny. Es medio mañoso, pero se lleva bien con quienes no lo molestan.",
             "img": "../imagenes/animalitos/cone2.jpg"
         },
+
         {
             "id": "conejo3",
             "nombre": "Pepito",
@@ -137,6 +146,7 @@
             "historia": "Martita vino de la zona de Mataderos. Su slogan es 'llegamos lento pero seguro'.",
             "img": "../imagenes/animalitos/tortu1.jpg"
         },
+
         {
             "id": "tortuga2",
             "nombre": "Kevin",
