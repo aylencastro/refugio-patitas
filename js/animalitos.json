@@ -1,0 +1,151 @@
+{
+   "animales": [
+        {
+            "id": "perro1",
+            "nombre": "Pepe",
+            "raza": "Colie, labrador, puro perro",
+            "especie": "Perro",
+            "edad": 4,
+            "colores": "marrón, dorado y negro",
+            "sexo": "Macho",
+            "historia": "Rescatamos a Pepe de un terreno valdío en Villa Urquiza. Estaba en terribles condiciones, pero luego de muchas vacunas y mucho amor y cuidados salió adelante lleno de alegría.",
+            "img": "../imagenes/animalitos/perri1.jpg"
+        },
+        {
+            "id": "perro2",
+            "nombre": "Gina",
+            "raza": "pitbull y puro perro",
+            "especie": "Perro",
+            "edad": 1,
+            "colores": "blanco",
+            "sexo": "Hembra",
+            "historia": "Gina vino en una camada de cachorros de Almagro. Es muy juguetona.",
+            "img": "../imagenes/animalitos/perri2.jpg"
+        },
+        {
+            "id": "perro3",
+            "nombre": "Anita",
+            "raza": "manto negro y puro perro",
+            "especie": "Perro",
+            "edad": 10,
+            "colores": "negra",
+            "sexo": "Hembra",
+            "historia": "La dueña de Anita no la podía cuidar más y lamentablemente tuvo que ponerla en adopción. Ella es muy cariñosa y buena, aunque le gusta mordisquear zapatos.",
+            "img": "../imagenes/animalitos/perri3.jpg"
+        },
+        {
+            "id": "perro4",
+            "nombre": "Panchito",
+            "raza": "salchicha y puro perro",
+            "especie": "Perro",
+            "edad": 12,
+            "colores": "marrón claro y negro",
+            "sexo": "Macho",
+            "historia": "Panchito es un perro pequeño pero lleno de energía. Sus dueños no pudieron seguir haciéndose cargo de él y es por eso que vino con nosotrxs.",
+            "img": "../imagenes/animalitos/perri4.jpg"
+        },
+
+        {
+            "id": "gato1",
+            "nombre": "Reina",
+            "edad": 5,
+            "colores": "naranja, blanco y negro",
+            "especie": "Gato",
+            "sexo": "Hembra",
+            "historia": "Reina apareció un sábado lluvioso en el refugio y decidió no irse nunca más. Es la compañera ideal para mirar pelis en Netflix porque no te spoilea.",
+            "img": "../imagenes/animalitos/gati1.jpg"
+        },
+        {
+            "id": "gato2",
+            "nombre": "Dante",
+            "edad": 15,
+            "colores": "negro",
+            "especie": "Gato",
+            "sexo": "Macho",
+            "historia": "Rescatamos a Dante de una construcción. Se ve que tenía muchas ganas de ser Bob el Constructor y eso se nota hasta hoy en día.",
+            "img": "../imagenes/animalitos/gati2.jpg"
+        },
+        {
+            "id": "gato3",
+            "nombre": "Alfa",
+            "edad": 9,
+            "colores": "negro y gris",
+            "especie": "Gato",
+            "sexo": "Macho",
+            "historia": "Alfa vino de una camada de gatitos de una vecina. Se la pasa durmiendo, ideal para quienes viven en departamentos e introvertidxs.",
+            "img": "../imagenes/animalitos/gati3.jpg"
+        },
+    
+    {
+            "id": "ave1",
+            "nombre": "Rodolfo",
+            "edad": 2,
+            "colores": "amarillo, negro y verde",
+            "especie": "Ave",
+            "sexo": "Macho",
+            "historia": "Rodolfo vino del ex Zoo de Buenos Aires. Super charlatán y compañero.",
+            "img": "../imagenes/animalitos/ave1.jpg"
+        },
+        {
+            "id": "ave2",
+            "nombre": "Gallo Claudio",
+            "edad": 5,
+            "colores": "amarillo",
+            "especie": "Ave",
+            "sexo": "Macho",
+            "historia": "Clau fue rescatado de una granja y ahora se la pasa despertando a todo el mundo a las 5am. La alarma más molesta, recomendamos 10/10.",
+            "img": "../imagenes/animalitos/ave2.jpg"
+        },   
+    {
+            "id": "conejo1",
+            "nombre": "Apio",
+            "edad": 1,
+            "colores": "blanco, negro y gris",
+            "especie": "Conejo",
+            "sexo": "Hembra",
+            "historia": "Rescatamos a Apio de un criadero. Muy esponjosito y carñoso.",
+            "img": "../imagenes/animalitos/cone1.jpg"
+        },
+        {
+            "id": "conejo2",
+            "nombre": "Bugs Bunny",
+            "edad": 3,
+            "colores": "gris",
+            "especie": "Conejo",
+            "sexo": "Macho",
+            "historia": "Bugs Bunny vino del mismo refugio que Bugs Bunny. Es medio mañoso, pero se lleva bien con quienes no lo molestan.",
+            "img": "../imagenes/animalitos/cone2.jpg"
+        },
+        {
+            "id": "conejo3",
+            "nombre": "Pepito",
+            "edad": 5,
+            "colores": "blanco",
+            "especie": "Conejo",
+            "sexo": "Macho",
+            "historia": "Pepito vino de una farmacia que testeaba en animales. Luego de muchos cuidados pudo salir adelante y brincar por doquier.",
+            "img": "../imagenes/animalitos/cone3.jpg"
+        },
+        
+        {
+            "id": "tortuga1",
+            "nombre": "Marta",
+            "edad": 18,
+            "sexo": "Hembra",
+            "caparazon": "entero",
+            "especie": "Tortuga",
+            "historia": "Martita vino de la zona de Mataderos. Su slogan es 'llegamos lento pero seguro'.",
+            "img": "../imagenes/animalitos/tortu1.jpg"
+        },
+        {
+            "id": "tortuga2",
+            "nombre": "Kevin",
+            "edad": 21,
+            "sexo": "Macho",
+            "caparazon": "parcialmente roto",
+            "especie": "Tortuga",
+            "historia": "Kevin era compañero de piso de Martita y la sigue molestando como cuando era pequeño.",
+            "img": "../imagenes/animalitos/tortu2.jpg"
+        }
+    ]
+}
