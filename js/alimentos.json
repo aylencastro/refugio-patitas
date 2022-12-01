@@ -1,0 +1,92 @@
+{
+    "alimentos": [
+        {
+            "producto": "Alimento Pedigree Carne y Vegetales para Perro Adulto - 21 Kg",
+            "cantidad": 21,
+            "precio": 8500,
+            "stock": true,
+            "marca": "Pedigree",
+            "edad": "18 meses - 7 años",
+            "img": "../imagenes/alimentos/perros/adulto.png"
+        },
+
+        {
+            "producto": "Alimento Pedigree Carne Pollo y Cereales para Perro Senior - 1,5 Kg",
+            "cantidad": 1.5,
+            "precio": 1200,
+            "stock": false,
+            "marca": "Pedigree",
+            "edad": "+7 años",
+            "img": "../imagenes/alimentos/perros/senior.jpg"
+        },
+
+        {
+            "producto": "Alimento Pedigree Carne y Pollo para Perro Cachorro - 3 Kg",
+            "cantidad": 3,
+            "precio": 2150,
+            "stock": true,
+            "marca": "Pedigree",
+            "edad": "2 - 18 meses",
+            "img": "../imagenes/alimentos/perros/cachorro.png"
+        },
+
+        {
+            "producto": "Promo Combo Alimento para Perro Adulto",
+            "cantidad": 2,
+            "precio": 800,
+            "stock": true,
+            "marca": "Pedigree",
+            "edad": "18 meses - 7 años",
+            "combo": ["Bolsa de Alimento Carne y Vegetales para Perro Adulto - 1,5 Kg", "Sobrecito Pollo en Salsa para Perro Adulto - 100 Gr", "Lata Carne Paté para Perro Adulto - 300 Gr"],
+            "img": "../imagenes/alimentos/perros/promo.png"
+        },
+
+        {
+            "producto": "Alimento Balanceado Whiskas Para Gato - 10 Kg",
+            "cantidad": 10,
+            "precio": 4000,
+            "stock": true,
+            "marca": "Whiskas",
+            "edad": "+1 año",
+            "sabores": ["Carne", "Pollo", "Pescado"],
+            "img": "../imagenes/alimentos/gatos/gato1.jpg"
+        },
+
+        {
+            "producto": "Alimento Balanceado Whiskas Carne y Leche Para Gatitos - 2x500 gr",
+            "cantidad": 1,
+            "precio": 1150,
+            "stock": true,
+            "marca": "Whiskas",
+            "edad": "2-12 meses",
+            "img": "../imagenes/alimentos/gatos/gatitos.png"
+        },
+
+        {
+            "producto": "Alimento Balanceado Conejin Para Conejos y Cobayos - 2x750 Gr",
+            "cantidad": 1.5,
+            "precio": 1050,
+            "stock": true,
+            "marca": "Conejin",
+            "img": "../imagenes/alimentos/conejo/cone.jpg"
+        },
+
+        {
+            "producto": "Alimento Nelsoni Ranch Mix Silvestre Para Aves - 2x750 Gr",
+            "cantidad": 1.5,
+            "precio": 1700,
+            "stock": true,
+            "marca": "Nelsoni Ranch",
+            "img": "../imagenes/alimentos/aves/ave.jpg"
+        },
+
+        {
+            "producto": "Alimento Nelsoni Ranch Mix Loros - 2x600 Gr",
+            "cantidad": 1.2,
+            "precio": 1300,
+            "stock": false,
+            "marca": "Nelsoni Ranch",
+            "img": "../imagenes/alimentos/aves/loros.png"
+        }
+    ]
+}
