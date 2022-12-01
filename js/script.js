@@ -247,3 +247,33 @@ conejitos.onclick = () => {
     });
     animalesPorConocer.style.display = "block";
 }
+
+// LOCAL STORAGE
+// SetItem
+var btnSet = document.getElementById("setIt");
+btnSet.addEventListener("click", sumarAlmacenamiento);
+
+function sumarAlmacenamiento(){
+    var nombreSet = prompt("Nombre de Usuario");
+    localStorage.setItem("usuario", nombreSet);
+    document.getElementById("mostrarIt").innerHTML = "";
+}
+
+//getItem
+var btnGet = document.getElementById("getIt");
+btnGet.addEventListener("click", mostrarAlmacenamiento);
+
+function mostrarAlmacenamiento(){
+    var nombreGet = localStorage.getItem("usuario");
+    document.getElementById("mostrarIt").innerHTML = "Bienvenidx " + nombreGet + "!!";
+}
+
+//Clear Storage
+var btnClear = document.getElementById("clearIt");
+btnClear.addEventListener("click", borrarAlmacenamiento);
+
+function borrarAlmacenamiento(){
+    localStorage.clear();
+    sessionStorage.clear();
+    document.getElementById("mostrarIt").innerHTML = "";
+}

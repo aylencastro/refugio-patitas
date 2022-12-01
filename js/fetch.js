@@ -1,3 +1,4 @@
+// Fetch para Historias Animales
 fetch('../js/animalitos.json')
     .then( respuesta => respuesta.json())
     .then( data => {
@@ -64,7 +65,7 @@ function mostrarAnimales(data) {
         seccionAnimal.appendChild(edadAnimal);
         seccionAnimal.appendChild(sexoAnimal);
 
-        // Si tiene caparazón
+        // Si tiene colores
         if (data.animales[i].colores != null){
             const coloresAnimal = document.createElement('h4');
             coloresAnimal.innerHTML = "Sus colores: " + data.animales[i].colores;
@@ -80,13 +81,131 @@ function mostrarAnimales(data) {
 
         // Si tiene parecido a otras razas
         if (data.animales[i].raza != null){
-        const razaAnimal = document.createElement('h4');
-        razaAnimal.innerHTML = "Razas similares: " + data.animales[i].raza;
-        seccionAnimal.appendChild(razaAnimal);
+            const razaAnimal = document.createElement('h4');
+            razaAnimal.innerHTML = "Razas similares: " + data.animales[i].raza;
+            seccionAnimal.appendChild(razaAnimal);
         } 
 
         seccionAnimal.appendChild(historiaAnimal);
-        seccionAnimal.appendChild(fotoAnimal);
-        
+        seccionAnimal.appendChild(fotoAnimal);       
     }
+}
+
+
+// Parte de e-commerce
+// Fetch y muestra de productos
+fetch('../js/alimentos.json')
+    .then( r => r.json())
+    .then( d => {
+        console.log('Productos:', d);
+        mostrarProductos(d);
+    })
+    .catch( e => {
+        console.error('Problema:', e);
+    });
+
+
+function mostrarProductos(d){
+    for (i = 0; i < d.alimentos.length; i++) {
+        // Crea div que engloba cada producto
+        const productoAnimal = document.createElement('div');
+
+        // Nombre Producto
+        const nombreProducto = document.createElement('h3');
+        nombreProducto.innerHTML = d.alimentos[i].producto;
+
+        // Cantidad de Producto
+        const kgProducto = document.createElement('h5');
+        kgProducto.innerHTML = d.alimentos[i].cantidad + " kg";
+
+        // Precio de Producto
+        const precioProducto = document.createElement('h4');
+        precioProducto.innerHTML = "Precio: $" + d.alimentos[i].precio;
+
+        // Marca de Producto
+        const marcaProducto = document.createElement('h6');
+        marcaProducto.innerHTML = "Marca: " + d.alimentos[i].marca;
+
+        // Imagen
+        const fotoProducto = document.createElement('img');
+        fotoProducto.setAttribute("src", d.alimentos[i].img);
+
+        // Botón de Comprar
+        const btnComprar = document.createElement('button');
+        btnComprar.innerHTML = "Comprar";
+        btnComprar.setAttribute("class", "btnComprar");
+        btnComprar.setAttribute("value", d.alimentos[i].producto + " | " + d.alimentos[i].precio);
+        btnComprar.addEventListener("click", agregarCarrito);
+
+        // Mostrar los Productos
+        document.getElementById("ventaProductos").appendChild(productoAnimal);
+        productoAnimal.appendChild(nombreProducto);
+        productoAnimal.appendChild(precioProducto);
+        productoAnimal.appendChild(marcaProducto);
+        productoAnimal.appendChild(kgProducto);
+
+        // Si es para cierta edad
+        if (d.alimentos[i].edad != null){
+            const edadProducto = document.createElement('h6');
+            edadProducto.innerHTML = "Edades: " + d.alimentos[i].edad;
+            productoAnimal.appendChild(edadProducto);
+        }
+
+        // Si es un combo
+        if (d.alimentos[i].combo != null){
+            const comboProducto = document.createElement('h6');
+            const listaCombo = document.createElement('ul');
+            comboProducto.innerHTML = "El combo trae: ";
+            comboProducto.appendChild(listaCombo);
+            d.alimentos[i].combo.forEach( (j) => {
+                const prodCombo = document.createElement('li');
+                prodCombo.innerHTML = j;
+                listaCombo.appendChild(prodCombo);
+            });
+            productoAnimal.appendChild(comboProducto);
+        }
+
+        // Si viene en distintos sabores
+        if (d.alimentos[i].sabores != null){
+            const saboresProducto = document.createElement('h6');
+            const listaSabores = document.createElement('ul');
+            saboresProducto.innerHTML = "Sabores para elegir: ";
+            saboresProducto.appendChild(listaSabores);
+            d.alimentos[i].sabores.forEach( (k) => {
+                const sabor = document.createElement('li');
+                sabor.innerHTML = k;
+                listaSabores.appendChild(sabor);
+            });
+            productoAnimal.appendChild(saboresProducto);
+        }
+
+        productoAnimal.appendChild(fotoProducto);
+        productoAnimal.appendChild(btnComprar);
+
+        //Si no hay stock
+        if (d.alimentos[i].stock == false){
+            const faltaStock = document.createElement('p');
+            faltaStock.innerHTML = "Por el momento no contamos con stock de este producto. Vuelva a intentarlo más tarde.";
+            btnComprar.setAttribute("disabled", "");
+            btnComprar.setAttribute("class", "noStock");
+            productoAnimal.appendChild(faltaStock);
+        }
+
+        // Si el producto tiene PROMO
+        if (d.alimentos[i].promo == true) {
+            precioProducto.setAttribute("class", "promo");
+            precioProducto.innerHTML = "¡¡¡Precio: $" + d.alimentos[i].precio + "!!!";
+        }
+    }
+}
+
+// Actualización del contador del Carrito
+let contador = document.getElementById("contador");
+var conteo = 0;
+contador.innerHTML = conteo;
+
+function agregarCarrito(){
+    conteo++;
+    contador.innerHTML = conteo;
+    return true
 }

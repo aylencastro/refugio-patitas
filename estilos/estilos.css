@@ -455,6 +455,175 @@ form{
     border-radius: 20px;
 }
 
+#ventaProductos{
+    width: 90%;
+    background-color: #705D56;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 8vh auto 5vh;
+    flex-wrap: wrap;
+    height: fit-content;
+    padding: 2vh 0;
+}
+
+#imgProductos{
+    width: 100% !important;
+    height: 90vh;
+    background-image: url("../imagenes/alimentos/productos.jpeg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#ventaProductos h2{
+    text-shadow: #503B31 1px 1px;
+    color: #372625;
+}
+
+#ventaProductos h3{
+    color: #D8A56D;
+    text-shadow: #372625 1px 1px;
+    font-size: 2rem;
+}
+
+#ventaProductos h4, #ventaProductos h5, #ventaProductos h6{
+    text-shadow: #372625 1px 1px;
+    margin-left: 2vw;
+    margin-top: 1vh;
+}
+
+#ventaProductos h4{
+    font-size: 1.7rem;
+    color: #456F99;
+    text-shadow: #372625 1.5px 1.5px;
+}
+
+#ventaProductos h5{
+    font-size: 1.2rem;
+}
+
+#ventaProductos h6{
+    font-size: 1rem;
+}
+
+#ventaProductos p{
+    font-size: 1rem;
+    color: #6FA1CF;
+    font-weight: 600;
+    text-align: center;
+    width: 80%;
+    margin: 1vh auto;
+}
+
+#ventaProductos ul, #ventaProductos li{
+    margin-left: 1.5vw;
+    margin-top: 1vh;
+    color: #9097C0;
+    list-style-type: disclosure-closed;
+}
+
+#ventaProductos div{
+    width: 45%;
+    background-color: #4f372c;
+    color: #FBFEF9;
+    margin: 2vh 0;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    min-height: 50vh;
+    padding-top: 0.5vh;
+}
+
+#ventaProductos div img{
+    height: 50vh;
+    margin: 2vh auto 1vh;
+    max-width: 100%;
+}
+
+.btnComprar{
+    margin: 2vh auto;
+    background-color: #D8A56D;
+    color: #372625;
+    font-weight: 700;
+    height: 5vh;
+    border-radius: 20px;
+    border-color: #503B31 #4f372c;
+    width: 20%;
+}
+
+.btnComprar:hover{
+    background-color: #9097C0;
+    cursor: pointer;
+}
+
+.noStock{
+    margin: 2vh auto;
+    background-color: #D8A56D;
+    color: #372625;
+    font-weight: 700;
+    height: 5vh;
+    border-radius: 20px;
+    border-color: #503B31 #4f372c;
+    width: 20%;
+}
+
+.promo{
+    color: red !important;
+}
+
+#carrito{
+    border-radius: 50%;
+    position: fixed;
+    right: 0.6rem;
+    top: 70%;
+    z-index: 3;
+}
+
+#carrito img{
+    height: 11vh;
+}
+
+#carrito div{
+    width: 1.5vw;
+    height: 3.5vh;
+    background-color: #020202;
+    border-radius: 50%;
+    color: #6FA1CF;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: 5;
+    display: flex;
+}
+
+#carrito div p{
+    margin: auto;
+    font-weight: 600;
+}
+
+.storage{
+    height: 12vh;
+    width: 50%;
+    background-color: #456F99;
+    margin: 2vh auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.storage button{
+    height: 5vh;
+    width: 15%;
+    margin: 1vh auto;
+    cursor: pointer;
+}
+
+.storage p{
+    width: 100%;
+    margin: 1vh auto;
+    text-align: center;
+}
+
 @media (max-width:768px){
     p{
         font-size: 1.5rem;

@@ -3,7 +3,7 @@
         {
             "producto": "Alimento Pedigree Carne y Vegetales para Perro Adulto - 21 Kg",
             "cantidad": 21,
-            "precio": 8500,
+            "precio": 8500, 
             "stock": true,
             "marca": "Pedigree",
             "edad": "18 meses - 7 años",
@@ -35,6 +35,7 @@
             "cantidad": 2,
             "precio": 800,
             "stock": true,
+            "promo": true,
             "marca": "Pedigree",
             "edad": "18 meses - 7 años",
             "combo": ["Bolsa de Alimento Carne y Vegetales para Perro Adulto - 1,5 Kg", "Sobrecito Pollo en Salsa para Perro Adulto - 100 Gr", "Lata Carne Paté para Perro Adulto - 300 Gr"],
@@ -48,7 +49,7 @@
             "stock": true,
             "marca": "Whiskas",
             "edad": "+1 año",
-            "sabores": ["Carne", "Pollo", "Pescado"],
+            "sabores": ["Carne", "Pollo", "Pescado", "Carne y Pollo", "Paté", "Atún y Bacalao"],
             "img": "../imagenes/alimentos/gatos/gato1.jpg"
         },
 
@@ -69,6 +70,16 @@
             "stock": true,
             "marca": "Conejin",
             "img": "../imagenes/alimentos/conejo/cone.jpg"
+        },
+
+        {
+            "producto": "Alimento Balanceado Cunipic Para Conejos Toy, Mini y Super Toy - 1 Kg",
+            "cantidad": 1,
+            "precio": 955,
+            "stock": true,
+            "promo": true,
+            "marca": "Cunipic",
+            "img": "../imagenes/alimentos/conejo/toy.jpeg"
         },
 
         {
